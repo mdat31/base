@@ -1,4 +1,4 @@
-import 'package:base/ui/home/screen/home_screen.dart';
+import 'package:base/presentation/home/screen/home_screen.dart';
 import 'package:flutter/cupertino.dart';
 
 class AppRoute {
