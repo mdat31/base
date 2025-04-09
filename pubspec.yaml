@@ -1,0 +1,76 @@
+name: mod
+description: "A new Flutter project."
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.6.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  #Localizations
+  flutter_localizations:
+    sdk: flutter
+  intl: any
+
+  cupertino_icons: ^1.0.8
+
+  #Network library
+  retrofit: ^4.4.2
+  dio: ^5.8.0+1
+  pretty_dio_logger: ^1.4.0
+
+  #State management, Dependencies injection library
+  get_it: ^8.0.3
+  flutter_bloc: ^9.1.0
+  injectable: ^2.5.0
+
+  # Router
+  go_router: ^14.8.1
+
+  #Generate library
+  json_annotation: ^4.9.0
+  freezed_annotation: ^3.0.0
+  equatable: ^2.0.7
+
+  #Storage library
+  shared_preferences: ^2.5.3
+
+  # Encrypted Shared Preferences
+  flutter_secure_storage: ^9.2.4
+
+  #Functional programming
+  fpdart: ^1.1.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^5.0.0
+  flutter_flavorizr: ^2.3.0
+  build_runner: ^2.4.14
+  retrofit_generator: ^9.1.7
+  freezed: ^3.0.6
+  injectable_generator: ^2.6.2
+  json_serializable: ^6.9.0
+  go_router_builder: ^2.8.2
+  build_verify: ^3.1.0
+
+flutter:
+  generate: true
+  uses-material-design: true

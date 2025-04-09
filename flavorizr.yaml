@@ -1,0 +1,29 @@
+flavors:
+  dev:
+    app:
+      name: "dev"
+
+    android:
+      applicationId: "com.vmo.mod.dev"
+#      firebase:
+#        config: "android/apple/google-services.json"
+    ios:
+      bundleId: "com.vmo.mod.dev"
+
+  stg:
+    app:
+      name: "stg"
+
+    android:
+      applicationId: "com.vmo.mod.stg"
+    ios:
+      bundleId: "com.vmo.mod.stg"
+
+  prod:
+    app:
+      name: "prod"
+
+    android:
+      applicationId: "com.vmo.mod"
+    ios:
+      bundleId: "com.vmo.mod"

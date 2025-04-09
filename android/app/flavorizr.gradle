@@ -1,0 +1,21 @@
+android {
+    flavorDimensions += "flavor-type"
+
+    productFlavors {
+        dev {
+            dimension "flavor-type"
+            applicationId "com.vmo.mod.dev"
+            resValue "string", "app_name", "dev"
+        }
+        stg {
+            dimension "flavor-type"
+            applicationId "com.vmo.mod.stg"
+            resValue "string", "app_name", "stg"
+        }
+        prod {
+            dimension "flavor-type"
+            applicationId "com.vmo.mod"
+            resValue "string", "app_name", "prod"
+        }
+    }
+}
