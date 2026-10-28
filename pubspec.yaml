@@ -1,76 +1,67 @@
 name: mod
-description: "A new Flutter project."
-publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+description: Flutter base project — Clean Architecture, BLoC, flavors, l10n and tests.
+publish_to: 'none'
 
-# The following defines the version and build number for your application.
-# A version number is three numbers separated by dots, like 1.2.43
-# followed by an optional build number separated by a +.
-# Both the version and the builder number may be overridden in flutter
-# build by specifying --build-name and --build-number, respectively.
-# In Android, build-name is used as versionName while build-number used as versionCode.
-# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
-# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
-# Read more about iOS versioning at
-# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
-# In Windows, build-name is used as the major, minor, and patch parts
-# of the product and file versions while build-number is used as the build suffix.
 version: 1.0.0+1
 
 environment:
-  sdk: ^3.6.0
+  sdk: ^3.13.0
+  flutter: ">=3.47.0"
 
 dependencies:
   flutter:
     sdk: flutter
-
-  #Localizations
   flutter_localizations:
     sdk: flutter
-  intl: any
 
-  cupertino_icons: ^1.0.8
+  # Localization / formatting
+  intl: ^0.20.3
 
-  #Network library
-  retrofit: ^4.4.2
-  dio: ^5.8.0+1
+  # State management
+  bloc: ^9.2.1
+  flutter_bloc: ^9.1.1
+
+  # Dependency injection
+  get_it: ^9.3.0
+  injectable: ^3.0.0
+
+  # Navigation
+  go_router: ^18.1.1
+
+  # Networking
+  dio: ^5.11.1
+  retrofit: ^4.10.0
   pretty_dio_logger: ^1.4.0
 
-  #State management, Dependencies injection library
-  get_it: ^8.0.3
-  flutter_bloc: ^9.1.0
-  injectable: ^2.5.0
+  # Models / functional
+  freezed_annotation: ^3.1.0
+  json_annotation: ^4.12.0
+  fpdart: ^1.2.0
 
-  # Router
-  go_router: ^14.8.1
+  # Storage
+  shared_preferences: ^2.5.6
+  flutter_secure_storage: ^11.2.0
 
-  #Generate library
-  json_annotation: ^4.9.0
-  freezed_annotation: ^3.0.0
-  equatable: ^2.0.7
-
-  #Storage library
-  shared_preferences: ^2.5.3
-
-  # Encrypted Shared Preferences
-  flutter_secure_storage: ^9.2.4
-
-  #Functional programming
-  fpdart: ^1.1.1
+  cupertino_icons: ^2.0.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  flutter_lints: ^6.0.0
 
-  flutter_lints: ^5.0.0
-  flutter_flavorizr: ^2.3.0
-  build_runner: ^2.4.14
-  retrofit_generator: ^9.1.7
-  freezed: ^3.0.6
-  injectable_generator: ^2.6.2
-  json_serializable: ^6.9.0
-  go_router_builder: ^2.8.2
-  build_verify: ^3.1.0
+  # Code generation
+  build_runner: ^2.16.1
+  freezed: ^4.0.1
+  json_serializable: ^6.15.2
+  retrofit_generator: ^10.3.2
+  injectable_generator: ^3.1.3
+
+  # Testing
+  bloc_test: ^10.0.0
+  mocktail: ^1.0.5
 
 flutter:
   generate: true
   uses-material-design: true
+  assets:
+    - assets/images/
