@@ -1,0 +1,66 @@
+{
+  "@@locale": "en",
+  "languageName": "English",
+  "@languageName": {
+    "description": "Native name of this language, shown in the language picker"
+  },
+  "retry": "Retry",
+  "cancel": "Cancel",
+  "confirm": "Confirm",
+  "emptyData": "Nothing here yet",
+  "showPassword": "Show password",
+  "hidePassword": "Hide password",
+  "errorServer": "Something went wrong on our side. Please try again.",
+  "errorUnauthorized": "Your session has expired. Please sign in again.",
+  "errorNetwork": "No internet connection.",
+  "errorTimeout": "The request timed out. Please try again.",
+  "errorCache": "Could not access local storage.",
+  "errorUnexpected": "An unexpected error occurred.",
+  "loginTitle": "Welcome back",
+  "loginSubtitle": "Sign in to continue",
+  "usernameLabel": "Username",
+  "passwordLabel": "Password",
+  "loginButton": "Sign in",
+  "usernameRequired": "Please enter your username",
+  "passwordTooShort": "Password must be at least {min} characters",
+  "@passwordTooShort": {
+    "placeholders": {
+      "min": {
+        "type": "int"
+      }
+    }
+  },
+  "demoAccountHint": "Demo account: {username} / {password}",
+  "@demoAccountHint": {
+    "placeholders": {
+      "username": {
+        "type": "String"
+      },
+      "password": {
+        "type": "String"
+      }
+    }
+  },
+  "navHome": "Home",
+  "navSettings": "Settings",
+  "homeGreeting": "Hello, {name}!",
+  "@homeGreeting": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "profileEmail": "Email",
+  "profileUsername": "Username",
+  "settingsTitle": "Settings",
+  "themeSection": "Theme",
+  "themeSystem": "System",
+  "themeLight": "Light",
+  "themeDark": "Dark",
+  "languageSection": "Language",
+  "languageSystem": "System default",
+  "logout": "Sign out",
+  "logoutConfirmTitle": "Sign out?",
+  "logoutConfirmMessage": "You will need to sign in again to use the app."
+}

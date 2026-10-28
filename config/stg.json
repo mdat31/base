@@ -1,0 +1,8 @@
+{
+  "FLAVOR": "stg",
+  "APP_NAME": "Mod Stg",
+  "BASE_URL": "https://dummyjson.com",
+  "ENABLE_LOGGING": "true",
+  "CONNECT_TIMEOUT_MS": "15000",
+  "RECEIVE_TIMEOUT_MS": "15000"
+}

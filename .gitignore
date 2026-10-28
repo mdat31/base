@@ -48,14 +48,15 @@ app.*.map.json
 /android/app/profile
 /android/app/release
 .metadata
-pubspec.lock
 
 # Ignore on project
 /lib/generated/
 *.g.dart
 *.freezed.dart
 /lib/gen/
-coverage/lcov.info
+*.config.dart
+/lib/l10n/gen/
+coverage/
 /ios/build
 /resources/
 code-quality-report.json

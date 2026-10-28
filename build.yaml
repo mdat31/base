@@ -1,0 +1,12 @@
+targets:
+  $default:
+    builders:
+      json_serializable:
+        options:
+          explicit_to_json: true
+          include_if_null: false
+      freezed:
+        options:
+          # Entities/states only need ==, copyWith, toString. JSON lives on DTOs.
+          from_json: false
+          to_json: false
